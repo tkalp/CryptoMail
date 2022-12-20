@@ -1,0 +1,77 @@
+  /** 
+    Breakpoints:
+    ------------
+    sm: min-width: 640px; //small device
+    md: min-width: 768px; // medium device
+    lg: min-width: 1024px; // large device
+    xl: min-width: 1280px; // extra large device
+    2xl: min-width: 1536px; // 2 x extra large device
+  **/
+
+@mixin reset-spacing {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    @include reset-spacing;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(255, 255, 255);
+    padding: 1rem;
+    min-height: 15vh;
+
+    div {
+        h1, h3 {
+            @include reset-spacing;
+        }
+    }
+
+    .titleWrapper{
+        font-size: 1.3rem;
+
+        @media (min-width: 640px){
+            font-size: 1.4rem;
+        }
+
+        @media (min-width: 1024px){
+            font-size: 1.7rem;
+        }
+
+        @media (min-width: 1536px){
+            font-size: 2rem;
+        }
+    }
+
+    .subTitleWrapper{
+        font-size: 0.8rem;
+
+        @media (min-width: 640px){
+            font-size: 1rem;
+        }
+
+        @media (min-width: 1024px){
+            font-size: 1.2rem;
+        }
+    }
+}
+
+.welcomeWrapper {
+    margin-top: 1rem;
+
+    button {
+        background: white;
+        padding: 0.3rem 1rem;
+        font-size: 1.2rem;
+        transition: all 200ms;
+        outline: none;
+        border: 2px solid black;
+
+        &:hover{
+            cursor: pointer;
+            background: rgb(255, 232, 163);
+        }
+    }
+}

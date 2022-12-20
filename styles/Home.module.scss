@@ -1,0 +1,22 @@
+.main {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.content{
+    display: flex;
+    height: 85vh;
+}
+
+.messageList {
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background: rgb(218, 248, 238); 
+}
+
+.messageContent {
+    background: rgb(11, 225, 154);
+    width: 75%;
+}
